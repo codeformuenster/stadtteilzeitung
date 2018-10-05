@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  mariadb:
+    image: 'bitnami/mariadb:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=bn_wordpress
+      - MARIADB_DATABASE=bitnami_wordpress
+    volumes:
+      - ./data/mariadb:/bitnami
+  wordpress:
+    image: bitnami/wordpress:latest
+    depends_on:
+      - mariadb
+    ports:
+      - '80:80'
+      - '443:443'
+    environment:
+      - WORDPRESS_DATABASE_USER=bn_wordpress
+      - WORDPRESS_DATABASE_NAME=bitnami_wordpress
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - ./data/wordpress:/bitnami
