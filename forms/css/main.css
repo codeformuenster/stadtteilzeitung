@@ -1,7 +1,5 @@
 
 
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -127,6 +125,9 @@ iframe {
 
 /*//////////////////////////////////////////////////////////////////
 [ Contact 1 ]*/
+body{
+
+}
 
 .contact1 {
   width: 100%;
@@ -135,7 +136,7 @@ iframe {
 
  /*background-image: linear-gradient(to left top, #1b2330, #2c303b, #3d3e45, #4d4d50, #5c5c5c);
 */
-  background: url(../images/background1.jpg);
+  background: url(../images/background3.jpg);
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
