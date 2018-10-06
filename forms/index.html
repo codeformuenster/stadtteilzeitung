@@ -23,6 +23,11 @@
 </head>
 <body>
 <style>
+
+body{
+	background:  url(images/maps.jpg);
+}
+
 .upload-btn-wrapper {
   position: relative;
   overflow: hidden;
@@ -36,71 +41,89 @@
   top: 0;
   opacity: 0;
 }
-</style>
-	<div class="contact1">
-		<div class="container-contact1">
 
-			<div class="contact1-pic">
+.first-text, .second-text{
+  /* display: block; */
+  font-family: Montserrat-ExtraBold;
+  font-size: 80px;
+  color: #ffffff;
+  line-height: 1.2;
+  display: inline-block;
+  text-shadow: 4px 4px 10px black;
+}
+.second-text {
+  /* display: block; */
+  left: -4px;
+  color: #ffee00;
+}
 
-				<div class=" js-tilt" data-tilt>
-					<img id="preview" src="images/gratisography-cat.jpg" alt="IMG">
-					<output id="list"></output>
-				</div>
-					<center>
-						<div class="upload-btn-wrapper" style="margin-top:20px">
-							<div class="container-contact1-form-btn">
-								<button class="contact1-form-btn" style="background-color:darkblue">
-									<span>
-										Upload Your photo 
-										<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-							
+.header-wrapper{
+	display: block;
+}
+.sub-wrapper{
+	display: block;
+	position: absolute;
+	/* width: 90%; */
+
+	left: 60%;
+	top:30%
+}
+
+.sub-wrapper-text{
+	display: block;
+	position: absolute;
+	/* width: 90%; */
+
+	left: 60%;
+	top:42%;
+	font-size: 2em;
+	color: white;
+	font-weight: 700;
+	text-shadow: 1px 1px 4px black;
+	line-height: 30px;
+}
+
+*{
 	
-							<input type="file"
-							id="files" name="files[]" multiple />
-						</div>
-					</center>
-					
-			</div>
+}
 
-			<form class="contact1-form validate-form">
-				<span class="contact1-form-title">
-					The form
-				</span>
+</style>
 
-				<div class="wrap-input1 validate-input" data-validate = "Bitte Überschrift eingeben">
-					<input class="input1" type="text" name="headline" placeholder="Überschrift">
-					<span class="shadow-input1"></span>
-				</div>
+<body onclick="window.location.replace('district1.html');">
 
-				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input1" type="text" name="email" placeholder="Autor">
-					<span class="shadow-input1"></span>
-				</div>
+<a href="district1.html">
 
-				<div class="wrap-input1 validate-input" data-validate = "Bitte Unterthema eingeben">
-					<input class="input1" type="text" name="Unterthema" placeholder="Unterthema">
-					<span class="shadow-input1"></span>
-				</div>
+<div class="biggest-wrapper">
 
-				<div class="wrap-input1 validate-input" data-validate = "Bitte Text eingeben">
-					<textarea class="input1" name="message" placeholder="Artikeltext"></textarea>
-					<span class="shadow-input1"></span>
-				</div>
-
-				<div class="container-contact1-form-btn">
-					<button class="contact1-form-btn">
-						<span>
-							Artikel speichern
-							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-						</span>
-					</button>
-				</div>
-			</form>
+	<!-- <div class="contact1">
+		<div class="maintext">
+			<span class="contact1-form-titlea">
+				Stadtteil
+			</span>
+			<span class="contact1-form-titleb">
+				Zeitung
+			</span>
 		</div>
+				
+	</div> -->
+
+	<div class="header-wrapper">
+		<div class="sub-wrapper">
+			<span class="first-text">
+					Stadtteil
+			</span>
+			<span class="second-text">
+					Zeitung
+			</span>
+		</div>
+
+		<div class="sub-wrapper-text">
+				Bitte klicken Sie Ihren Stadtteil an!
+			</div>
 	</div>
+
+
+</div> </a>
 
 <script>
 	function dateiauswahl(evt) {
@@ -154,6 +177,7 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
 
 </body>
 </html>

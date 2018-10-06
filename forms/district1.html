@@ -36,67 +36,55 @@
   top: 0;
   opacity: 0;
 }
+
+#preview{
+	width: 400px;
+	height: auto;
+	border-radius: 10%;
+}
+
+body{
+	background-image: url("images/maps.jpg");
+}
+
+.container-contact1{
+	width: auto !important;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+}
+
+.contact1-form-btn{
+	display: block !important;
+}
+.contact1-form-btn + .contact1-form-btn{
+	margin-left: px;
+}
+
 </style>
+</head>
+<body>
 	<div class="contact1">
 		<div class="container-contact1">
 
-			<div class="contact1-pic">
-
-				<div class=" js-tilt" data-tilt>
-					<img id="preview" src="images/gratisography-cat.jpg" alt="IMG">
-					<output id="list"></output>
-				</div>
-					<center>
-						<div class="upload-btn-wrapper" style="margin-top:20px">
-							<div class="container-contact1-form-btn">
-								<button class="contact1-form-btn" style="background-color:darkblue">
-									<span>
-										Upload Your photo 
-										<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-							
-	
-							<input type="file"
-							id="files" name="files[]" multiple />
-						</div>
-					</center>
-					
-			</div>
-
 			<form class="contact1-form validate-form">
-				<span class="contact1-form-title">
-					The form
-				</span>
-
-				<div class="wrap-input1 validate-input" data-validate = "Bitte Überschrift eingeben">
-					<input class="input1" type="text" name="headline" placeholder="Überschrift">
-					<span class="shadow-input1"></span>
-				</div>
-
-				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input1" type="text" name="email" placeholder="Autor">
-					<span class="shadow-input1"></span>
-				</div>
-
-				<div class="wrap-input1 validate-input" data-validate = "Bitte Unterthema eingeben">
-					<input class="input1" type="text" name="Unterthema" placeholder="Unterthema">
-					<span class="shadow-input1"></span>
-				</div>
-
-				<div class="wrap-input1 validate-input" data-validate = "Bitte Text eingeben">
-					<textarea class="input1" name="message" placeholder="Artikeltext"></textarea>
-					<span class="shadow-input1"></span>
-				</div>
-
 				<div class="container-contact1-form-btn">
+					<a href="#">
 					<button class="contact1-form-btn">
 						<span>
-							Artikel speichern
+							Generate Pdf
 							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 						</span>
 					</button>
+					</a>
+						
+					<a href="login.html">
+					<button class="contact1-form-btn" onclick="window.location.replace('index.html');">
+							<span>
+								Login
+								<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+							</span>
+						</button> </a>
 				</div>
 			</form>
 		</div>
