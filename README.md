@@ -1,25 +1,45 @@
 # Stadtteilzeitung
-"Eine Zeitung für Münsters Stadtteile"
+"Eine Zeitung für Münsters Stadtteile" - Ein Münsterhack 2018 Projekt 
 
-Ein Münsterhack 2018 Projekt 
-## Idee
+## Ergebnisse
 
-* Wordpress Installation: https://hub.docker.com/r/bitnami/wordpress/ 
+Design-Entwürfe für die Eingabeformulare befinden sich hier: 
 
-# Installation
+* https://codeformuenster.org/stadtteilzeitung/forms/index.html - Startseite
+* https://codeformuenster.org/stadtteilzeitung/forms/district1.html - Ausgabe wählen
+* https://codeformuenster.org/stadtteilzeitung/forms/login.html - Loginformular
+* https://codeformuenster.org/stadtteilzeitung/forms/kurzartikel.html - Eingabeformular für kurze Artikel
+* https://codeformuenster.org/stadtteilzeitung/forms/langartikel.html - Eingabeformular für lange Artikel
+* https://codeformuenster.org/stadtteilzeitung/forms/generator.html - Button zum Publizieren der Zeitung
 
+
+Stadtteilzeitungs-Ausgabe
+
+* Pdf Dateien der Testversion unserer Stadtteilzeitung befinden sich hier: https://github.com/codeformuenster/stadtteilzeitung/tree/master/pdf
+
+Content-Management-System zum Managen einer Zeitungs-Ausgabe
+* Das Content Management-System ist derzeit nicht aktiv, sie können es lokal auf ihrem Computer starten, indem sie Docker-Compose nutzen. Anleitung siehe unten.
+
+
+# Content Management System
+
+## Installation
+
+Folgendes auf der Konsole ausführen:
 ```
 docker-compose up
-
 ```
-Then point your browser to http://localhost
+
+## Starten
+Im Browser folgende Seite öffnen: http://localhost
 Login: user / bitnami
 
+
+# HintergrundInformationen
 
 ## Debugging
 ```
 docker-compose up
-
 ```
 
 # Ideas for input form designs
@@ -32,7 +52,7 @@ Best choices:
 
 # Links
 * http://localhost/2018/?print=pdf-search => PDF view
-* 
+
 # Project overview
 
 Wordpress Docker Varianten
@@ -42,3 +62,4 @@ Wordpress Docker Varianten
 Wordpress PDF Plugins
 * "Make PDF Newsletter" => :( no longer maintained => https://wordpress.org/plugins/make-pdf-newspaper/
 * PDF & Print by BestWebSoft 
+
