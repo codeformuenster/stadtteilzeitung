@@ -86,11 +86,14 @@
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Bitte Text eingeben">
-					<textarea class="input1" name="message" placeholder="Artikeltext"></textarea>
+					<textarea id = "news" class="input1" name="message" placeholder="Artikeltext"></textarea>
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="container-contact1-form-btn">
+
+				<div id = "remainingC" > Remaining characters: 840</div>
+
 					<button class="contact1-form-btn">
 						<span>
 							Artikel speichern
@@ -136,8 +139,6 @@
 
 </script>
 
-
-
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -154,6 +155,29 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
+
+<script>
+
+ $(document).ready(function() {
+  var maxchar = 840;
+
+  $( '#news' ).keyup(function(){
+    var len = $(this).val().length;
+	console.log(len);
+    if(len > maxchar){
+        return false;
+    }
+    else if (len > 0) {
+        $( "#remainingC" ).html( "Remaining characters: " +( maxchar - len ) );
+    }
+    else {
+        $( "#remainingC" ).html( "Remaining characters: " +( maxchar ) );
+    }
+  })
+ });
+
+</script>
 
 </body>
 </html>
